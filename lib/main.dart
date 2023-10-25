@@ -1,7 +1,9 @@
 import 'package:aqary_test/shared/router/app_router.dart';
+import 'package:aqary_test/shared/services/service_locator.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  setupServiceLocator();
   runApp(const MainApp());
 }
 
