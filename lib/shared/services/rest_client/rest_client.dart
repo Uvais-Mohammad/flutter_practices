@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'dart:developer';
 
 import 'package:aqary_test/shared/services/rest_client/i_rest_client.dart';
@@ -9,7 +8,7 @@ class RestClient implements IRestClient {
   Future<http.Response> get(String url, {int maxRetryCount = 1}) async {
     for (var i = 0; i < maxRetryCount; i++) {
       try {
-        log('count ${i+1}');
+        log('count ${i + 1}');
         final response = await http.get(
           Uri.parse(
             url,
@@ -25,5 +24,4 @@ class RestClient implements IRestClient {
     }
     throw 'Failed to connect to server';
   }
-
 }

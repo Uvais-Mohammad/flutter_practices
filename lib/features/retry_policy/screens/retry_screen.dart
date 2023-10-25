@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:aqary_test/shared/services/rest_client/i_rest_client.dart';
 import 'package:aqary_test/shared/services/service_locator.dart';
 import 'package:flutter/material.dart';
@@ -17,13 +19,13 @@ class _RetryScreenState extends State<RetryScreen> {
   }
 
   void loadData() async {
-    const correctUrl = 'https://jsonplaceholder.typicode.com/todos/12';
+    // const correctUrl = 'https://jsonplaceholder.typicode.com/todos/12';
     const wrongUrl = 'https://jsonplaceholddddder.typicode.com/todos/1';
     var response = await serviceLocator<IRestClient>().get(
       wrongUrl,
       maxRetryCount: 5,
     );
-    print('response $response');
+    log('response $response');
   }
 
   @override

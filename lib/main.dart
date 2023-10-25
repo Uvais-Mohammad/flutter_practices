@@ -1,6 +1,9 @@
+import 'package:aqary_test/features/sticky_header/logic/bloc/todo_bloc.dart';
+import 'package:aqary_test/features/sticky_header/repository/i_todo_repository.dart';
 import 'package:aqary_test/shared/router/app_router.dart';
 import 'package:aqary_test/shared/services/service_locator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
   setupServiceLocator();
@@ -18,8 +21,11 @@ class _MainAppState extends State<MainApp> {
   final _appRouter = AppRouter();
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      routerConfig: _appRouter.config(),
+    return BlocProvider(
+      create: (context) => TodoBloc(serviceLocator<ITodoRepository>()),
+      child: MaterialApp.router(
+        routerConfig: _appRouter.config(),
+      ),
     );
   }
 }

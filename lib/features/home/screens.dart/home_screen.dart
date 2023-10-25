@@ -1,5 +1,6 @@
 import 'package:aqary_test/features/auto_route_navigation/screens/first_screen.dart';
 import 'package:aqary_test/features/retry_policy/screens/retry_screen.dart';
+import 'package:aqary_test/features/sticky_header/screens/sticky_header_screen.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
@@ -30,15 +31,24 @@ class HomeScreen extends StatelessWidget {
                 onPressed: () {},
                 child: const Text("3. Render objects with custom paints")),
             ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push<dynamic>(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const StickyHeaderScreen(),
+                    ),
+                  );
+                },
                 child:
                     const Text("4. Bouncing sticky header with infinite list")),
             ElevatedButton(
                 onPressed: () {
                   Navigator.push<dynamic>(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const RetryScreen()));
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const RetryScreen(),
+                    ),
+                  );
                 },
                 child:
                     const Text("5. Retry policy by calling an API if failed")),
