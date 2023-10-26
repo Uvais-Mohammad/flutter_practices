@@ -1,4 +1,6 @@
+import 'package:aqary_test/features/asynchronous_generator_with_transformer/screens/counter_screen.dart';
 import 'package:aqary_test/features/auto_route_navigation/screens/first_screen.dart';
+import 'package:aqary_test/features/render_object/screens/render_object_screen.dart';
 import 'package:aqary_test/features/builder_pattern/screens/product_screen.dart';
 import 'package:aqary_test/features/retry_policy/screens/retry_screen.dart';
 import 'package:aqary_test/features/sticky_header/screens/sticky_header_screen.dart';
@@ -29,14 +31,26 @@ class HomeScreen extends StatelessWidget {
                 },
                 child: const Text("1. Builder Pattern Flutter")),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push<dynamic>(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const CounterScreen()));
+              },
               child: const Text(
                 "2. Asynchronous generator with bloc including with transformers",
                 textAlign: TextAlign.center,
               ),
             ),
             ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push<dynamic>(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const RenderObjectScreen(),
+                    ),
+                  );
+                },
                 child: const Text("3. Render objects with custom paints")),
             ElevatedButton(
                 onPressed: () {

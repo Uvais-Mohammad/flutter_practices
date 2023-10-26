@@ -1,3 +1,4 @@
+import 'package:aqary_test/features/asynchronous_generator_with_transformer/bloc/counter_bloc.dart';
 import 'package:aqary_test/features/sticky_header/logic/bloc/todo_bloc.dart';
 import 'package:aqary_test/features/sticky_header/repository/i_todo_repository.dart';
 import 'package:aqary_test/shared/router/app_router.dart';
@@ -21,8 +22,15 @@ class _MainAppState extends State<MainApp> {
   final _appRouter = AppRouter();
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => TodoBloc(serviceLocator<ITodoRepository>()),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => TodoBloc(serviceLocator<ITodoRepository>()),
+        ),
+        BlocProvider(
+          create: (context) => CounterBloc(),
+        ),
+      ],
       child: MaterialApp.router(
         routerConfig: _appRouter.config(),
       ),
