@@ -1,9 +1,9 @@
-import 'package:aqary_test/features/asynchronous_generator_with_transformer/screens/counter_screen.dart';
-import 'package:aqary_test/features/auto_route_navigation/screens/first_screen.dart';
-import 'package:aqary_test/features/render_object/screens/render_object_screen.dart';
-import 'package:aqary_test/features/builder_pattern/screens/product_screen.dart';
-import 'package:aqary_test/features/retry_policy/screens/retry_screen.dart';
-import 'package:aqary_test/features/sticky_header/screens/sticky_header_screen.dart';
+import 'package:aqary_test/features/2_asynchronous_generator_with_transformer/screens/counter_screen.dart';
+import 'package:aqary_test/features/6_auto_route_navigation/screens/first_screen.dart';
+import 'package:aqary_test/features/3_render_object/screens/render_object_screen.dart';
+import 'package:aqary_test/features/1_builder_pattern/screens/product_screen.dart';
+import 'package:aqary_test/features/5_retry_policy/screens/retry_screen.dart';
+import 'package:aqary_test/features/4_sticky_header/screens/sticky_header_screen.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 

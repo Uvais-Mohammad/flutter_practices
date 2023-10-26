@@ -1,4 +1,4 @@
-import 'package:aqary_test/features/builder_pattern/models/product_model.dart';
+import 'package:aqary_test/features/1_builder_pattern/models/product_model.dart';
 import 'package:flutter/material.dart';
 
 class ProductDisplay extends StatelessWidget {

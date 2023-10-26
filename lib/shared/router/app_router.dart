@@ -1,5 +1,5 @@
-import 'package:aqary_test/features/auto_route_navigation/screens/first_screen.dart';
-import 'package:aqary_test/features/auto_route_navigation/screens/second_screen.dart';
+import 'package:aqary_test/features/6_auto_route_navigation/screens/first_screen.dart';
+import 'package:aqary_test/features/6_auto_route_navigation/screens/second_screen.dart';
 import 'package:aqary_test/features/home/screens.dart/home_screen.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';

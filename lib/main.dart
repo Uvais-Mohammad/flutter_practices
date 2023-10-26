@@ -1,6 +1,6 @@
-import 'package:aqary_test/features/asynchronous_generator_with_transformer/bloc/counter_bloc.dart';
-import 'package:aqary_test/features/sticky_header/logic/bloc/todo_bloc.dart';
-import 'package:aqary_test/features/sticky_header/repository/i_todo_repository.dart';
+import 'package:aqary_test/features/2_asynchronous_generator_with_transformer/bloc/counter_bloc.dart';
+import 'package:aqary_test/features/4_sticky_header/logic/bloc/todo_bloc.dart';
+import 'package:aqary_test/features/4_sticky_header/repository/i_todo_repository.dart';
 import 'package:aqary_test/shared/router/app_router.dart';
 import 'package:aqary_test/shared/services/service_locator.dart';
 import 'package:flutter/material.dart';

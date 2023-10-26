@@ -1,4 +1,4 @@
-import 'package:aqary_test/features/builder_pattern/models/product_builder.dart';
+import 'package:aqary_test/features/1_builder_pattern/models/product_builder.dart';
 
 class Product {
   final String _name;

@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:aqary_test/features/render_object/widgets/render_custom_object.dart';
+import 'package:aqary_test/features/3_render_object/widgets/render_custom_object.dart';
 import 'package:flutter/material.dart';
 
 class RenderObjectScreen extends StatelessWidget {

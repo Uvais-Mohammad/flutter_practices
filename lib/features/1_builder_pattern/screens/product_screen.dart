@@ -1,8 +1,8 @@
-import 'package:aqary_test/features/builder_pattern/models/product_builder.dart';
-import 'package:aqary_test/features/builder_pattern/models/product_model.dart';
-import 'package:aqary_test/features/builder_pattern/widgets/product_display.dart';
-import 'package:aqary_test/features/builder_pattern/widgets/product_form.dart';
-import 'package:aqary_test/features/builder_pattern/widgets/product_list.dart';
+import 'package:aqary_test/features/1_builder_pattern/models/product_builder.dart';
+import 'package:aqary_test/features/1_builder_pattern/models/product_model.dart';
+import 'package:aqary_test/features/1_builder_pattern/widgets/product_display.dart';
+import 'package:aqary_test/features/1_builder_pattern/widgets/product_form.dart';
+import 'package:aqary_test/features/1_builder_pattern/widgets/product_list.dart';
 import 'package:flutter/material.dart';
 
 class ProductScreen extends StatefulWidget {
